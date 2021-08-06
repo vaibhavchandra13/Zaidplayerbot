@@ -11,9 +11,9 @@
 - NodeJs > V14. (Latest is better)
 - Yarn (Optional)
 
-### Tutorial
+### Support
  
-- VPS/Local : [Tutorial](https://arnabxd.hashnode.dev/deploy-tgvcbot-in-a-ubuntu-vps)
+- Zaid : [Support](https://t.me/zaid_team)
 
 ### Memes
 
