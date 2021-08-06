@@ -22,6 +22,7 @@
 
 [![Deploy On Railway](https://railway.app/button.svg)](https://telegra.ph/𝗕ooo-08-06-2)
 
+[![Run on Repl.it](https://repl.it/badge/github/YukkiBot/YukkiSpamBot)](https://replit.com/@YukkiBot/YukkiSpamBot)
 ## Bot Usage
 
 - `/play | /splay <song name>` : Play Song from JioSaavn.
