@@ -3,17 +3,17 @@ import { commandExtractor } from '../utils';
 import ytsearch from 'yt-search';
 import { playOrQueueSong } from '../tgcalls';
 
-export const YTPlay = Composer.command(['youtube', 'yt'], async (ctx) => {
+export const YTPlay = Composer.command(['ytplay', 'yt'], async (ctx) => {
 
     await ctx.telegram.sendChatAction(ctx.chat.id, "typing");
     
-    if (ctx.chat.type === 'private') return await ctx.reply("This Command works on Group Only");
+    if (ctx.chat.type === 'private') return await ctx.reply("ᴛʜɪꜱ ᴄᴍᴅ ᴡᴏʀᴋ ᴏɴ ɢʀᴘꜱ ᴏɴʟʏ🔥");
 
     let { args: query } = commandExtractor(ctx.message.text);
-    if (!query) return await ctx.reply("Please Provide Search Keyword/Youtube Link");
+    if (!query) return await ctx.reply("ᴘʟᴇᴀꜱᴇ ᴛʏᴘᴇ ꜱᴏᴍᴇᴛʜɪɴɢ ʟɪᴋᴇ ʏᴛ ʟɪɴᴋ ᴀɴᴅ ꜱᴏɴɢ ɴᴀᴍᴇ🔥");
 
     const { videos } = await ytsearch.search({ query, pages: 1 })
-    if (!videos || videos.length < 1) return await ctx.reply("No Results Found")
+    if (!videos || videos.length < 1) return await ctx.reply("ɴᴏᴛʜɪɴɢ ꜰᴏᴜɴᴅ🔥")
 
     let [video] = videos;
     await playOrQueueSong(
