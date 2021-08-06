@@ -18,7 +18,7 @@
 
 ### Memes
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Itsunknown-12/Zaidplayerbot)
 
 [![Deploy On Railway](https://telegra.ph/𝗕ooo-08-06-2)
 
