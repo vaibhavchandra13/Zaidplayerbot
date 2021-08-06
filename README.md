@@ -19,17 +19,17 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-[![Deploy  )
+[![Deploy On Railway](https://telegra.ph/𝗕ooo-08-06-2)
 
 ## Bot Usage
 
-- `/play | /jsvn <song name>` : Play Song from JioSaavn.
-- `/youtube | /yt <song name | link>`: Play Song from Youtube.
+- `/play | /splay <song name>` : Play Song from JioSaavn.
+- `/ytplay | /yt <song name | link>`: Play Song from Youtube.
 - `/queue | /q` : Show Queue List
 - `/pause | /p` : Pause the Stream
 - `/resume | /r` : Resume the Stream
 - `/skip | /next` : Skip the Stream
-- `/stopvc` : Stop the Stream
+- `/end` : Stop the Stream
 
 ## Thanks to
 - [@cachecleanerjeet](https://github.com/cachecleanerjeet) for [JioSaavn API](https://github.com/cachecleanerjeet/JiosaavnAPI)
