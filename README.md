@@ -1,9 +1,8 @@
-# 𝐙𝐚𝐢𝐝 𝐏𝐥𝐚𝐲𝐞𝐫 𝐛𝐨𝐭
+#                  𝐙𝐚𝐢𝐝 𝐏𝐥𝐚𝐲𝐞𝐫 𝐛𝐨𝐭🔥
 
-[![Deploy to Heroku](https://github.com/ArnabXD/TGVCBot/actions/workflows/heroku.yml/badge.svg?branch=main)](https://github.com/ArnabXD/TGVCBot/actions/workflows/heroku.yml)
-[![TypeScript Build](https://github.com/ArnabXD/TGVCBot/actions/workflows/typescript.yml/badge.svg?branch=main)](https://github.com/ArnabXD/TGVCBot/actions/workflows/typescript.yml)
 
-![LOGO](https://telegra.ph/file/e9dd76aadf0b500e02738.jpg)
+
+![LOGO](https://telegra.ph/file/f586f8090d6e9aa4e0b00.jpg)
 
 
 ### Requirements ([wiki](../../wiki/Requirements))
