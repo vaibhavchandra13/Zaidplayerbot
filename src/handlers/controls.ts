@@ -3,22 +3,22 @@ import { TgCalls, playOrQueueSong } from '../tgcalls';
 import { queue } from '../queue';
 
 export const Pause = Composer.command(['pause', 'p'], async (ctx) => {
-    if (ctx.chat.type === 'private') return await ctx.reply("This Command works on Group Only");
-    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("Inactive VC");
+    if (ctx.chat.type === 'private') return await ctx.reply("ᴛʜɪꜱ ᴄᴍᴅ ᴡᴏʀᴋꜱ ᴏɴ ɢʀᴘꜱ ᴏɴʟʏ");
+    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("ɪɴᴀᴄᴛɪᴠᴇ ᴠᴄ ᴄʜᴀᴛ");
 
     await ctx.reply(TgCalls.pause(ctx.chat.id) ? 'Paused' : 'Not Playing')
 });
 
 export const Resume = Composer.command(['resume', 'r'], async (ctx) => {
-    if (ctx.chat.type === 'private') return await ctx.reply("This Command works on Group Only");
-    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("Inactive VC");
+    if (ctx.chat.type === 'private') return await ctx.reply("ᴛʜɪꜱ ᴄᴍᴅ ᴡᴏʀᴋꜱ ᴏɴ ɢʀᴘꜱ ᴏɴʟʏ");
+    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("ɪɴᴀᴄᴛɪᴠᴇ ᴠᴄ ᴄʜᴀᴛ");
 
     await ctx.reply(TgCalls.resume(ctx.chat.id) ? 'Resumed' : 'Not Paused')
 });
 
 export const Skip = Composer.command(['skip', 'next'], async (ctx) => {
-    if (ctx.chat.type === 'private') return await ctx.reply("This Command works on Group Only");
-    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("Inactive VC");
+    if (ctx.chat.type === 'private') return await ctx.reply("ᴛʜɪꜱ ᴄᴍᴅ ᴡᴏʀᴋꜱ ᴏɴ ɢʀᴘꜱ ᴏɴʟʏ");
+    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("ɪɴᴀᴄᴛɪᴠᴇ ᴠᴄ ᴄʜᴀᴛ");
 
     let next = queue.get(ctx.chat.id);
     if (next) {
@@ -30,9 +30,9 @@ export const Skip = Composer.command(['skip', 'next'], async (ctx) => {
     await TgCalls.stop(ctx.chat.id);
 });
 
-export const Stop = Composer.command('stopvc', async (ctx) => {
-    if (ctx.chat.type === 'private') return await ctx.reply("This Command works on Group Only");
-    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("Inactive VC");
+export const Stop = Composer.command('end', async (ctx) => {
+    if (ctx.chat.type === 'private') return await ctx.reply("ᴛʜɪꜱ ᴄᴍᴅ ᴡᴏʀᴋꜱ ᴏɴ ɢʀᴘꜱ ᴏɴʟʏ");
+    if (!TgCalls.connected(ctx.chat.id)) return await ctx.reply("ɪɴᴀᴄᴛɪᴠᴇ ᴠᴄ ᴄʜᴀᴛ");
 
     queue.clear(ctx.chat.id);
 
