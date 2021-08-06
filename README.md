@@ -1,6 +1,7 @@
 #                  𝐙𝐚𝐢𝐝 𝐏𝐥𝐚𝐲𝐞𝐫 𝐛𝐨𝐭🔥
 
 
+     Bot is Private 😜 
 
 ![LOGO](https://telegra.ph/file/f586f8090d6e9aa4e0b00.jpg)
 
