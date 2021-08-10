@@ -3,7 +3,7 @@ import { commandExtractor } from '../utils';
 import ytsearch from 'yt-search';
 import { playOrQueueSong } from '../tgcalls';
 
-export const YTPlay = Composer.command(['ytplay', 'yt'], async (ctx) => {
+export const YTPlay = Composer.command(['ytplay', 'play'], async (ctx) => {
 
     await ctx.telegram.sendChatAction(ctx.chat.id, "typing");
     
