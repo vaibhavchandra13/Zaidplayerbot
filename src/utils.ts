@@ -36,15 +36,15 @@ export const getPosterImageUrl = (image: string, title: string, artist: string =
 
 export const sendPlayingMessage = async (chat: Chat, data: QueueData) => {
     let text =
-        `Playing <a href="${data.link}">${data.title}</a>\n` +
-        `<b>&#10143;</b> Duration : ${hhmmss(data.duration)}\n` +
-        `<b>&#10143;</b> Requested by <a href="tg://user?id=${data.requestedBy.id}">${escape(data.requestedBy.first_name)}</a>`;
+        `ᴢᴀɪᴅ ᴘʟᴀʏɪɴɢ <a href="${data.link}">${data.title}</a>\n` +
+        `<b>&#10143;</b> ᴅᴜʀᴀᴛɪᴏɴ : ${hhmmss(data.duration)}\n` +
+        `<b>&#10143;</b> ᴢᴀɪᴅᴜꜱᴇʀ ʙʏ <a href="tg://user?id=${data.requestedBy.id}">${escape(data.requestedBy.first_name)}</a>`;
     try {
         await bot.telegram.sendPhoto(chat.id, getPosterImageUrl(data.image, data.title, data.artist), {
             caption: text,
             parse_mode: 'HTML'
         });
-        console.log(`[TGVCBot][${chat.name}] Playing - ${data.title}`);
+        console.log(`[ZaidBot][${chat.name}] ᴢᴀɪᴅ ᴘʟᴀʏɪɴɢ - ${data.title}`);
     } catch (err) {
         await bot.telegram.sendMessage(chat.id, text, { parse_mode: 'HTML' });
         await log(escape(String(err)));
