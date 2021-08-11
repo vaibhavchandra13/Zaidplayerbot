@@ -1,5 +1,6 @@
 FROM node:16-buster-slim
 RUN apt update && apt upgrade -y && apt install ffmpeg git -y
+npm install ytdl-core@latest
 COPY . /tgvcbot
 WORKDIR /tgvcbot
 RUN yarn install
